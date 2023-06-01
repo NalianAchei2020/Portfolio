@@ -28,9 +28,6 @@ body {
 header {
   background-color: #fff;
   padding: 1.5rem;
-  position: sticky;
-  width: 100%;
-  top: 0;
 }
 
 .nav-container {
