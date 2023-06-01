@@ -29,6 +29,7 @@ header {
   background-color: #fff;
   padding: 1.5rem;
   position: sticky;
+  position: static;
   width: 100%;
   top: 0;
 }
