@@ -28,6 +28,9 @@ body {
 header {
   background-color: #fff;
   padding: 1.5rem;
+  position: sticky;
+  width: 100%;
+  top: 0;
 }
 
 .nav-container {
@@ -306,7 +309,7 @@ header {
   background: #fff;
   padding: 1rem;
   margin-block: 2.5rem 2.813rem;
-  color: #ff6060;
+  color: #6070ff;
   border: 1px solid #6070ff;
   border-radius: 16px;
   font-weight: 500;
