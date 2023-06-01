@@ -125,4 +125,4 @@ I would like to thank the microverse community for their lessons
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/NalianAchei2020/Portfolio/pull/2) licensed
+This project is [MIT](https://github.com/NalianAchei2020/Portfolio/blob/portfolio-feature/LICENSE) licensed
