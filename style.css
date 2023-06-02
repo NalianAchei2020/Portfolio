@@ -137,7 +137,12 @@ header {
   gap: 0.75rem;
 }
 
-.card-list li img{
+.skill img {
+  min-width: 3rem;
+  height: 3rem;
+}
+
+.card-list li img {
   color: #c1c7d0;
   width: 8px;
   height: 8px;
@@ -186,9 +191,6 @@ header {
   outline: none;
 }
 
-
-
-
 .about-me {
   background-color: #fff;
   padding: 9rem 1.5rem 7rem 1.5rem;
@@ -212,6 +214,7 @@ header {
   line-height: 1.5rem;
   margin-block: 12px;
 }
+
 .contact-title2 {
   color: #7f8cff;
   font-size: 1rem;
@@ -229,6 +232,7 @@ header {
   color: #505f79;
   font-size: 2rem;
 }
+
 .pro-languages {
   margin-top: 1.5rem;
 }
@@ -236,7 +240,6 @@ header {
 .languages-list {
   color: #000;
   min-height: 66.72px;
-  
 }
 
 .list-head {
@@ -258,11 +261,6 @@ header {
   color: #000;
 }
 
-.skill img {
-  min-width: 3rem;
-  height: 3rem;
-}
-
 .work-skills {
   display: flex;
   flex-flow: row nowrap;
@@ -273,6 +271,3 @@ header {
   margin-right: 1rem;
   margin-block: 0.75rem;
 }
-
-
-
