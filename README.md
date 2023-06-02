@@ -51,7 +51,7 @@ This a portfolio project that has a webpage that display my personal skills, rec
 - *Recent and past projects*
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo Link](https://nalianachei2020.github.io/Hello_Microverse)
+- [Live Demo Link](https://nalianachei2020.github.io/Portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -110,15 +110,14 @@ You can deploy this project using:
 - integration with javascript
 
 ## 🤝 Contributing <a name="contributing"></a>
-Feel free to check the [issues page](https://github.com/NalianAchei2020/Hello_Microverse/issues).
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project, please do well to give a star
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/NalianAchei2020/Portfolio/issues).
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project, please do well to give a star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
@@ -126,4 +125,4 @@ I would like to thank the microverse community for their lessons
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/NalianAchei2020/Portfolio/pull/2) licensed
+This project is [MIT](https://github.com/NalianAchei2020/Portfolio/blob/portfolio-feature/LICENSE) licensed
