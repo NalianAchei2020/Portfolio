@@ -42,7 +42,7 @@ header {
 .text-container {
   background: #fff;
   background-image: url('Images/background_img.png');
-  background-size: contain;
+  background-size: 100% 95%;
   background-repeat: no-repeat;
   left: 0;
   max-width: 100%;
@@ -53,6 +53,7 @@ header {
   flex-direction: column;
   margin-bottom: 9rem;
   border-bottom-left-radius: 100px;
+  z-index: 1;
 }
 
 .text-tiltle {
