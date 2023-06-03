@@ -9,9 +9,6 @@
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   width: 23.438rem;
@@ -26,10 +23,8 @@ header {
   background-color: #fff;
   align-items: center;
   padding: 1.5rem;
-  position: sticky;
   width: 100%;
   height: 70px;
-  top: 0;
   color: #6070ff;
 }
 
@@ -45,15 +40,14 @@ header {
   background-size: 100% 95%;
   background-repeat: no-repeat;
   left: 0;
-  max-width: 100%;
+  min-width: 100%;
   height: auto;
   margin-top: 0;
   display: flex;
   padding: 6.25rem  1.5rem 0 1.5rem;
   flex-direction: column;
-  margin-bottom: 9rem;
   border-bottom-left-radius: 100px;
-  z-index: 1;
+  margin-bottom: 5rem;
 }
 
 .text-tiltle {
@@ -86,7 +80,234 @@ header {
   margin-bottom: 8.265rem;
 }
 
+.card-list-item a {
+  color: #7a869a;
+}
+
+.card-list-item1 a {
+  color: #344563;
+}
+
 .contact-list li a {
   color: #505f79;
   font-size: 2rem;
+}
+
+.cart-container {
+  padding: 1.5rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  margin: 1rem;
+  gap: 5.5rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  align-items: center;
+  padding: 1rem;
+  min-width: 327px;
+  min-height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
+}
+
+.cart-image {
+  min-width: 295px;
+  height: 220px;
+  border: 8px;
+  margin-bottom: 12px;
+}
+
+.cart-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  text-transform: capitalize;
+  width: 18.125rem;
+}
+
+.card-list {
+  margin-block: 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.75rem;
+}
+
+.skill img {
+  min-width: 3rem;
+  height: 3rem;
+}
+
+.card-list li img {
+  color: #c1c7d0;
+  width: 8px;
+  height: 8px;
+}
+
+.cart-text p {
+  font-weight: 400;
+  font-size: 0.938rem;
+  line-height: 1.5rem;
+  color: #344563;
+  width: 18.125rem;
+  margin-block: 1.25rem 1rem;
+}
+
+.pro-lang {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
+  min-width: 92px;
+  height: 24px;
+  margin-block: 20px;
+  color: #6070ff;
+}
+
+.pro-lang li {
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+}
+
+.btn-project {
+  background: transparent;
+  padding: 1rem;
+  margin-block: 1rem 2rem;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-project:hover {
+  background-color: #6070ff;
+  color: #fff;
+  transition: width 2s ease-in-out 1s;
+}
+
+.btn-project:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.btn-project:disabled {
+  background-color: #e5e5e5;
+  color: #5e6c84;
+}
+
+.about-me {
+  background-color: #fff;
+  padding: 9rem 1.5rem 7rem 1.5rem;
+  border-top-right-radius: 100px;
+  min-height: 1062.15px;
+  min-width: 100%;
+  margin-top: 5rem;
+}
+
+.about-me h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #172b4d;
+  line-height: 3.25rem;
+}
+
+.about-me p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #344563;
+  line-height: 1.5rem;
+  margin-block: 12px;
+}
+
+.contact-title2 {
+  color: #7f8cff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-list2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-block: 1.625rem 0.5rem;
+}
+
+.contact-list2 li a {
+  color: #505f79;
+  font-size: 2rem;
+}
+
+.pro-languages {
+  margin-top: 1.5rem;
+}
+
+.skills-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.languages-list {
+  color: #000;
+  min-height: 66.72px;
+  align-items: center;
+}
+
+.languages-list li img {
+  margin-left: 12px;
+}
+
+.languages-list li img,
+.languages-list li span {
+  margin-block: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
+}
+
+.list-head {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  color: #000;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1.92rem;
+  background-color: #f7f7f9;
+  border-radius: 10px;
+}
+
+.work-skills {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  padding: 1rem 0;
+  margin-right: 1rem;
+  margin-block: 0.75rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+}
+
+.icon {
+  color: #505f79;
 }
