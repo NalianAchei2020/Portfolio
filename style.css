@@ -251,6 +251,12 @@ header {
   margin-top: 1.5rem;
 }
 
+.skills-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
 .languages-list {
   color: #000;
   min-height: 66.72px;
@@ -264,6 +270,9 @@ header {
 .languages-list li img,
 .languages-list li span {
   margin-block: 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
 }
 
 .list-head {
@@ -281,9 +290,6 @@ header {
   gap: 1rem;
   margin-block: 1.92rem;
   background-color: #f7f7f9;
-  font-weight: 500;
-  font-size: 20px;
-  color: #253858;
   border-radius: 10px;
 }
 
@@ -293,11 +299,15 @@ header {
   justify-content: space-between;
   align-items: center;
   min-width: 100%;
-  padding: 1rem;
+  padding: 1rem 0;
   margin-right: 1rem;
   margin-block: 0.75rem;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
+}
+
+.icon {
+  color: #505f79;
 }
