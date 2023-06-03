@@ -192,6 +192,12 @@ header {
   outline: none;
 }
 
+.btn-project:hover{
+ background-color: #6070ff;
+ color: #fff;
+ transition: width 2s ease-in-out 1s;
+}
+
 .about-me {
   background-color: #fff;
   padding: 9rem 1.5rem 7rem 1.5rem;
