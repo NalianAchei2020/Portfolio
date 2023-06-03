@@ -192,10 +192,10 @@ header {
   outline: none;
 }
 
-.btn-project:hover{
- background-color: #6070ff;
- color: #fff;
- transition: width 2s ease-in-out 1s;
+.btn-project:hover {
+  background-color: #6070ff;
+  color: #fff;
+  transition: width 2s ease-in-out 1s;
 }
 
 .about-me {
