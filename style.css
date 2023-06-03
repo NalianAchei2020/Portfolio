@@ -198,6 +198,15 @@ header {
   transition: width 2s ease-in-out 1s;
 }
 
+.btn-project:active{
+  background-color: #2230d2;
+  color: #fff;
+}
+.btn-project:disabled{
+  background-color: #E5E5E5;
+  color: #5e6c84;
+}
+
 .about-me {
   background-color: #fff;
   padding: 9rem 1.5rem 7rem 1.5rem;
@@ -288,4 +297,8 @@ header {
   padding: 1rem;
   margin-right: 1rem;
   margin-block: 0.75rem;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
+
