@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   width: 23.438rem;
+  max-width: 100%;
   flex-direction: column;
   background-color: #f7f7f9;
   position: relative;
@@ -310,4 +311,123 @@ header {
 
 .icon {
   color: #505f79;
+}
+
+.contact-form {
+  background: #6070ff;
+  background-image: url('Images/bottom_im.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  width: 100%;
+  height: 779px;
+  padding: 24px;
+  position: absolute;
+  left: 0;
+  border-top-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.contact-text {
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.contact-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.contact-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #ebebff;
+  width: 327px;
+  height: 137px;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contact-container input {
+  width: 100%;
+  padding: 1rem;
+  height: 3rem;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+}
+
+.contact-container input::placeholder {
+  color: #172b4d;
+}
+
+.contact-container textarea {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  background: #fff;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #b3bac5;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 170px;
+}
+
+.contact-container textarea::placeholder {
+  color: #b3bac5;
+}
+
+.cont-btn {
+  background: #fff;
+  padding: 12px 16px;
+  width: 142px;
+  height: 48px;
+  margin-top: 22px;
+  color: #6070ff;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  letter-spacing: 3%;
+  border: none;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cont-btn:hover {
+  background-color: #7e7ed6;
+  color: white;
+}
+
+.cont-btn:active {
+  background-color: #2230d2;
+  color: white;
 }
