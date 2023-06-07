@@ -11,8 +11,9 @@
 body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  width: 23.438rem;
-  max-width: 100%;
+  min-width: 23.438rem;
+  width: 100%;
+  max-width: 428px;
   flex-direction: column;
   background-color: #f7f7f9;
   position: relative;
@@ -41,7 +42,7 @@ header {
   background-size: 100% 95%;
   background-repeat: no-repeat;
   left: 0;
-  min-width: 100%;
+  width: 100%;
   height: auto;
   margin-top: 0;
   display: flex;
