@@ -11,7 +11,11 @@
 body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  width: 23.438rem;
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #f7f7f9;
   position: relative;
@@ -34,10 +38,14 @@ header {
   line-height: 20px;
 }
 
+.nav-items {
+  display: none;
+}
+
 .text-container {
   background: #fff;
   background-image: url('Images/background_img.png');
-  background-size: 100% 95%;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   left: 0;
   min-width: 100%;
@@ -63,7 +71,6 @@ header {
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
-  min-width: 327px;
   margin-block: 0.75rem;
 }
 
@@ -109,7 +116,7 @@ header {
   margin: 2.5rem;
   align-items: center;
   padding: 1rem;
-  min-width: 327px;
+  width: 327px;
   min-height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -155,7 +162,7 @@ header {
   font-size: 0.938rem;
   line-height: 1.5rem;
   color: #344563;
-  width: 18.125rem;
+  min-width: 18.125rem;
   margin-block: 1.25rem 1rem;
 }
 
@@ -189,18 +196,34 @@ header {
   outline: none;
 }
 
-.btn-project:hover {
+.btn-get {
+  background: transparent;
+  padding: 1rem;
+  margin-block: 1rem 2rem;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-project:hover,
+.btn-get:hover {
   background-color: #6070ff;
   color: #fff;
   transition: width 2s ease-in-out 1s;
 }
 
-.btn-project:active {
+.btn-project:active,
+.btn-get:active {
   background-color: #2230d2;
   color: #fff;
 }
 
-.btn-project:disabled {
+.btn-project:disabled,
+.btn-get:disabled {
   background-color: #e5e5e5;
   color: #5e6c84;
 }
@@ -298,7 +321,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
   padding: 1rem 0;
   margin-right: 1rem;
   margin-block: 0.75rem;
@@ -310,4 +333,122 @@ header {
 
 .icon {
   color: #505f79;
+}
+
+.contact-form {
+  background: #6070ff;
+  background-image: url('Images/bottom_im.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  width: 100%;
+  height: 779px;
+  padding: 24px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.contact-text {
+  margin-top: 70px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.contact-text h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.contact-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #ebebff;
+  line-height: 28px;
+  margin-top: 12px;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.contact-container input {
+  width: 100%;
+  padding: 1rem;
+  height: 3rem;
+  border-radius: 8px;
+  outline: none;
+  background: #fff;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
+  color: #172b4d;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+  border: 1px solid #cfd8dc;
+  background-color: #fff;
+}
+
+.contact-container input::placeholder {
+  color: #172b4d;
+}
+
+.contact-container textarea {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+  background: #fff;
+  margin: 10px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #b3bac5;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  height: 170px;
+}
+
+.contact-container textarea::placeholder {
+  color: #b3bac5;
+}
+
+.cont-btn {
+  background: #fff;
+  padding: 12px 16px;
+  width: 142px;
+  height: 48px;
+  margin-top: 22px;
+  color: #6070ff;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  letter-spacing: 3%;
+  border: none;
+  font-style: normal;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cont-btn:hover {
+  background-color: #7e7ed6;
+  color: white;
+}
+
+.cont-btn:active {
+  background-color: #2230d2;
+  color: white;
 }
