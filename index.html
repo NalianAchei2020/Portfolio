@@ -12,14 +12,19 @@
         <header>
             <a class="logo" href="#">ACHEI</a>
             <nav>
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <ul class="nav-items">
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa fa-bars" id="menu" aria-hidden="true"></i>
             </nav>
         </header>
         <section class="text-container">
             <section class="text">
                 <h1 class="text-tiltle">
-                    I’m Alexandra.<br>
-                    Glad to see<br> you!
+                    I’m Nalian.<br>
+                    Glad to see<br  class="break"> you!
                 </h1>
               <p class="text-paragraph">
                 I’m a software developer! I can help you build a product , 
@@ -40,10 +45,13 @@
                  </ul>
                 </section>
             </section>
-            <section class="carts-container">
+            <section class="carts-container" id="portfolio">
                 <section class="card">
                     <div>
-                        <img  class="cart-image" src="Images/cart1.png" alt="cart-image">
+                        <picture>
+                            <source media="(min-width:600px)" srcset="Images/img1.png" alt="cart-image">
+                            <img  class="cart-image" src="Images/cart1.png" alt="cart-image">
+                        </picture>
                     </div>
                     <div class="cart-text">
                         <h2 class="cart-title">tonic</h2>
@@ -66,22 +74,26 @@
                         <button type="button" class="btn-project">See Project</button>
                     </div>
                 </section>
-                <section class="card">
+                
+                <section class="card reverse">
                     <div>
-                        <img class="cart-imag" src="Images/cart2.png" alt="cart-image"> 
+                        <picture>
+                            <source media="(min-width:600px)" srcset="Images/img2.png" alt="cart-image">
+                        <img class="cart-image" src="Images/cart2.png" alt="cart-image"> 
+                        </picture>
                     </div>
                     <div class="cart-text">
                         <h2 class="cart-title">multi-post stories</h2>
                         <ul class="card-list">
-                            <li class="card-list-item1"><a href="#">CANOPY</a></li>
+                            <li class="card-list-item1"><a href="#">FACEBOOK</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
-                            <li class="card-list-item"><a href="#">Back End Dev</a></li>
+                            <li class="card-list-item"><a href="#">Full Stack Dev</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
                             <li class="card-list-item"><a href="#">2015</a></li>
                           </ul>
                           <p>
-                            A daily selection of privately personalized 
-                            reads; no accounts or sign-ups required.
+                            Experimental content creation feature that allows users to add 
+                            to an existing story over the course of a day without spamming their friends.
                           </p>
                           <ul class="pro-lang">
                             <li>HTML</li>
@@ -93,20 +105,24 @@
                 </section>
                 <section class="card">
                     <div>
-                        <img class="cart-imag" src="Images/cart3.png" alt="cart-image"> 
+                        <picture>
+                        <source media="(min-width:600px)" srcset="Images/cart1.png" alt="cart-image">
+                        <img class="cart-image" src="Images/cart3.png" alt="cart-image"> 
+                        </picture>
                     </div>
                     <div class="cart-text">
-                        <h2 class="cart-title">tonic</h2>
+                        <h2 class="cart-title">Facebook 360</h2>
                         <ul class="card-list">
-                            <li class="card-list-item1"><a href="#">CANOPY</a></li>
+                            <li class="card-list-item1"><a href="#">FACEBOOK</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
-                            <li class="card-list-item"><a href="#">Back End Dev</a></li>
+                            <li class="card-list-item"><a href="#">Full Stack Dev</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
                             <li class="card-list-item"><a href="#">2015</a></li>
                           </ul>
                           <p>
-                            A daily selection of privately personalized 
-                            reads; no accounts or sign-ups required.
+                            Exploring the future of media in Facebook's first Virtual 
+                            Reality app; a place to discover and enjoy 360 photos and 
+                            videos on Gear VR.
                           </p>
                           <ul class="pro-lang">
                             <li>HTML</li>
@@ -116,22 +132,25 @@
                         <button type="button" class="btn-project">See Project</button>
                     </div>
                 </section>
-                <section class="card">
+                <section class="card reverse">
                     <div>
-                        <img class="cart-imag" src="Images/cart4.png" alt="cart-image"> 
+                        <picture>
+                         <source media="(min-width:600px)" srcset="Images/cart2.png" alt="cart-image">
+                        <img class="cart-image" src="Images/cart4.png" alt="cart-image">
+                        </picture> 
                     </div>
                     <div class="cart-text">
-                        <h2 class="cart-title">multi-post stories</h2>
+                        <h2 class="cart-title">Uber Navigation</h2>
                         <ul class="card-list">
-                            <li class="card-list-item1"><a href="#">CANOPY</a></li>
+                            <li class="card-list-item1"><a href="#">Uber</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
-                            <li class="card-list-item"><a href="#">Back End Dev</a></li>
+                            <li class="card-list-item"><a href="#">Lead Developer</a></li>
                             <li><img src="Images/Counter.png" alt="counter"/></li>
-                            <li class="card-list-item"><a href="#">2015</a></li>
+                            <li class="card-list-item"><a href="#">2018</a></li>
                           </ul>
                           <p>
-                            A daily selection of privately personalized 
-                            reads; no accounts or sign-ups required.
+                            A smart assistant to make driving more safe, efficient, 
+                            and fun by unlocking your most expensive computer: your car.
                           </p>
                           <ul class="pro-lang">
                             <li>HTML</li>
@@ -143,8 +162,9 @@
                 </section>
             </section>
     
-            <section class="about-me">
-                <h2>About Myself</h2>
+            <section class="about-me" id="about">
+                <section class="sec-one">
+                    <h2>About Myself</h2>
                 <p>
                     Hello I’m a software developer! I can help you build a product , 
                     feature or website. Look through some of my work and experience! 
@@ -161,8 +181,9 @@
                         <li><a href="https://twitter.com/NalianAchei?t=E3ePLcJ7B45dBa8SBFIXDg&s=09"><img src="Images/twitter.png"/></a></li>
                         <li><a href="#"><img src="Images/Vector.png"/></a></li>
                        </ul>
-                      <button type="button" class="btn-project">Get my resume</button>
+                      <button type="button" class="btn-get">Get my resume</button>
             </section>
+        </section>
             <section class="pro-languages">
                 <ul class="list-head">
                     <li class="skills-title">Languages </li>
@@ -177,20 +198,20 @@
                    <li class="skills-title">FrameWorks</li>
                     <li class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
                 </ul>
-                <hr/>
+                <hr class="line"/>
                 <ul class="work-skills">
                     <li class="skills-title">Skills</li>
                     <li class="icon"><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
                 </ul>
-                <hr/>
+                <hr  class="line"/>
             </section>
         </section>
-            <section class="contact-form ">
+            <section class="contact-form" id="contact">
             <div class="contact-text">
              <h2>Contact me</h2>
              <p>
                  If you have an application you are interested in developing, 
-                 a feature that you need built or a project that needs coding.<br/> 
+                 a feature that you need built or a project that needs coding.<br class="break"/> 
                  I’d love to help with it!
                   </p>
                 </div>

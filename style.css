@@ -11,9 +11,11 @@
 body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
-  min-width: 23.438rem;
+  min-width: 320px;
   width: 100%;
-  max-width: 428px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
   background-color: #f7f7f9;
   position: relative;
@@ -36,13 +38,18 @@ header {
   line-height: 20px;
 }
 
+.nav-items{
+ display: none;
+ 
+}
+
 .text-container {
   background: #fff;
   background-image: url('Images/background_img.png');
-  background-size: 100% 95%;
+  background-size: 100% 90%;
   background-repeat: no-repeat;
   left: 0;
-  width: 100%;
+  min-width: 100%;
   height: auto;
   margin-top: 0;
   display: flex;
@@ -65,7 +72,6 @@ header {
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
-  min-width: 327px;
   margin-block: 0.75rem;
 }
 
@@ -111,7 +117,7 @@ header {
   margin: 2.5rem;
   align-items: center;
   padding: 1rem;
-  min-width: 327px;
+  width: 327px;
   min-height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -157,7 +163,7 @@ header {
   font-size: 0.938rem;
   line-height: 1.5rem;
   color: #344563;
-  width: 18.125rem;
+  min-width: 18.125rem;
   margin-block: 1.25rem 1rem;
 }
 
@@ -191,18 +197,18 @@ header {
   outline: none;
 }
 
-.btn-project:hover {
+.btn-project:hover, .btn-get:hover {
   background-color: #6070ff;
   color: #fff;
   transition: width 2s ease-in-out 1s;
 }
 
-.btn-project:active {
+.btn-project:active, .btn-get:active {
   background-color: #2230d2;
   color: #fff;
 }
 
-.btn-project:disabled {
+.btn-project:disabled, .btn-get:disabled {
   background-color: #e5e5e5;
   color: #5e6c84;
 }
@@ -247,6 +253,19 @@ header {
 .contact-list2 li a {
   color: #505f79;
   font-size: 2rem;
+}
+
+.btn-get{
+  background: transparent;
+  padding: 1rem;
+  margin-block: 1rem 2rem;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
 }
 
 .pro-languages {
@@ -300,7 +319,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  min-width: 100%;
+  width: 100%;
   padding: 1rem 0;
   margin-right: 1rem;
   margin-block: 0.75rem;
@@ -322,7 +341,8 @@ header {
   width: 100%;
   height: 779px;
   padding: 24px;
-  position: absolute;
+  position: relative;
+  top: 0;
   left: 0;
   border-top-left-radius: 100px;
   display: flex;
@@ -350,8 +370,6 @@ header {
   font-style: normal;
   font-weight: 400;
   color: #ebebff;
-  width: 327px;
-  height: 137px;
   line-height: 28px;
   margin-top: 12px;
 }
