@@ -38,9 +38,8 @@ header {
   line-height: 20px;
 }
 
-.nav-items{
- display: none;
- 
+.nav-items {
+  display: none;
 }
 
 .text-container {
@@ -197,18 +196,34 @@ header {
   outline: none;
 }
 
-.btn-project:hover, .btn-get:hover {
+.btn-get {
+  background: transparent;
+  padding: 1rem;
+  margin-block: 1rem 2rem;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 16px;
+  font-weight: 500;
+  font-size: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn-project:hover,
+.btn-get:hover {
   background-color: #6070ff;
   color: #fff;
   transition: width 2s ease-in-out 1s;
 }
 
-.btn-project:active, .btn-get:active {
+.btn-project:active,
+.btn-get:active {
   background-color: #2230d2;
   color: #fff;
 }
 
-.btn-project:disabled, .btn-get:disabled {
+.btn-project:disabled,
+.btn-get:disabled {
   background-color: #e5e5e5;
   color: #5e6c84;
 }
@@ -253,19 +268,6 @@ header {
 .contact-list2 li a {
   color: #505f79;
   font-size: 2rem;
-}
-
-.btn-get{
-  background: transparent;
-  padding: 1rem;
-  margin-block: 1rem 2rem;
-  color: #6070ff;
-  border: 1px solid #6070ff;
-  border-radius: 16px;
-  font-weight: 500;
-  font-size: 25px;
-  cursor: pointer;
-  outline: none;
 }
 
 .pro-languages {
