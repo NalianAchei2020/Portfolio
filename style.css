@@ -89,10 +89,12 @@ header {
 
 .card-list-item a {
   color: #7a869a;
+  white-space: nowrap;
 }
 
 .card-list-item1 a {
   color: #344563;
+  white-space: nowrap;
 }
 
 .contact-list li a {
