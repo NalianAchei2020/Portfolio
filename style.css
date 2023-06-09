@@ -116,7 +116,7 @@ header {
 .card {
   display: flex;
   flex-direction: column;
-  margin: 2.5rem;
+  margin-block: 2.5rem;
   align-items: center;
   padding: 1rem;
   width: 327px;
@@ -188,11 +188,11 @@ header {
 
 .btn-project {
   background: transparent;
-  padding: 1rem;
+  padding: 0.75rem;
   margin-block: 1rem 2rem;
   color: #6070ff;
   border: 1px solid #6070ff;
-  border-radius: 16px;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 25px;
   cursor: pointer;
@@ -201,11 +201,11 @@ header {
 
 .btn-get {
   background: transparent;
-  padding: 1rem;
+  padding: 0.75rem;
   margin-block: 1rem 2rem;
   color: #6070ff;
   border: 1px solid #6070ff;
-  border-radius: 16px;
+  border-radius: 8px;
   font-weight: 500;
   font-size: 25px;
   cursor: pointer;
@@ -617,7 +617,11 @@ header {
     font-weight: 400;
     line-height: 24px;
     margin-block: 32px 28px;
-    width: 97%;
+  }
+
+  .reverse-text{
+    all: unset;
+    margin-left: 32px;
   }
 
   .pro-lang li {
@@ -627,10 +631,11 @@ header {
     background-color: #ebebff;
     border-radius: 8px;
   }
+  
 
   .btn-project {
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     color: #396df2;
     border: 1px solid #6070ff;
@@ -680,7 +685,7 @@ header {
     font-weight: 500;
     color: #396df2;
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     border: 1px solid #6070ff;
     border-radius: 8px;
@@ -961,7 +966,7 @@ header {
 
   .btn-project {
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     color: #396df2;
     border: 1px solid #6070ff;
@@ -1009,7 +1014,7 @@ header {
     font-weight: 500;
     color: #396df2;
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     border: 1px solid #6070ff;
     border-radius: 8px;
@@ -1129,7 +1134,7 @@ header {
 
   header {
     width: 100%;
-    padding-inline: 155px;
+    padding-inline: 6em;
     position: fixed;
     top: 0;
     background-color: #fff;
@@ -1267,7 +1272,6 @@ header {
     line-height: 52px;
     color: #172b4d;
     text-transform: capitalize;
-    white-space: nowrap;
     width: 100%;
   }
 
@@ -1279,6 +1283,14 @@ header {
     width: 97%;
   }
 
+  .card-list {
+    margin-block: 1.25rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.75rem;
+  }
+
+  
   .pro-lang li {
     font-size: 12px;
     font-weight: 500;
@@ -1289,7 +1301,7 @@ header {
 
   .btn-project {
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     color: #396df2;
     border: 1px solid #6070ff;
@@ -1337,7 +1349,7 @@ header {
     font-weight: 500;
     color: #396df2;
     background: transparent;
-    padding: 1rem;
+    padding: 0.75rem;
     margin-block: 1rem 2rem;
     border: 1px solid #6070ff;
     border-radius: 8px;
