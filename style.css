@@ -68,11 +68,11 @@ nav {
   background-image: url("./Images/fon.png");
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   position: absolute;
   border-bottom-left-radius: 100px;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .heading {
@@ -95,6 +95,18 @@ nav {
 
 .links {
   margin: 10px 22px;
+}
+
+.card-list-item1 a {
+  font-size: 13px;
+  color: #344563;
+  white-space: nowrap;
+}
+
+.card-list-item a {
+  color: #7a869a;
+  white-space: nowrap;
+  font-size: 13px;
 }
 
 .links h3 a {
@@ -163,6 +175,7 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 2rem;
 }
 
 .project_two {
@@ -175,16 +188,17 @@ nav {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: 2rem;
 }
 
 .project_two img {
-  width: 295px;
-  height: 190px;
+  margin: 1rem;
+  height: 220px;
   border-radius: 8px;
 }
 
 .project_one img {
-  width: 295px;
+  margin: 1rem;
   height: 190px;
   border-radius: 8px;
 }
@@ -195,9 +209,10 @@ nav {
 
 .nam {
   color: #172b4d;
-  font-weight: 699;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
+  font-weight: 700;
   font-size: 32px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .list {
@@ -210,6 +225,26 @@ nav {
   margin-bottom: 3px;
 }
 
+.card-list {
+  margin-block: 1.25rem;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.work_skill img {
+  right: 0;
+  width: 50px;
+  margin-right: 30px;
+}
+
+.card-list li img {
+  color: #c1c7d0;
+  width: 8px;
+  height: 8px;
+  margin-top: 11px;
+  border-bottom: 4px;
+}
+
 .round {
   font-size: 40px;
   align-content: center;
@@ -220,17 +255,19 @@ nav {
 }
 
 .title_des {
-  width: 295px;
+  margin-top: -1rem;
+  font-family: 'Poppins'sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .skill_tab {
   display: inline-block;
   margin: 15px 0 15px 5px;
-  font-size: 13px;
   font-weight: 500;
+  font-size: 12px;
   color: #6070ff;
   background: #ebebff;
   padding: 5px 8px;
@@ -283,6 +320,7 @@ nav {
 }
 
 .about_text {
+  width: 447px;
   font-weight: 700;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
@@ -291,8 +329,10 @@ nav {
 }
 
 .about_intro {
+  width: 22rem;
+  height: 102px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   margin: 0 20px;
   font-family: 'Poppins', sans-serif;
   color: #344563;
@@ -384,7 +424,7 @@ nav {
   flex-direction: row;
   border-bottom: 1px solid #dfe1e6;
   border-radius: 0;
-  width: 109%;
+  width: 100%;
   height: auto;
   padding: 4px;
   display: flex;
@@ -400,15 +440,9 @@ nav {
   font-family: 'Poppins', sans-serif;
 }
 
-.work_skill img {
-  right: 0;
-  width: 30px;
-  margin-right: 30px;
-}
-
 .full_form {
   background: #6070ff;
-  height: 700px;
+  height: 750px;
   display: flex;
   padding: 0 30px;
   margin-top: -100px;
@@ -417,12 +451,13 @@ nav {
 }
 
 form {
-  margin-top: 30px;
+  margin-top: 0;
   text-align: center;
   margin-bottom: 90px;
 }
 
 .bottom_image {
+  margin-top: 3rem;
   background-image: ("../Images/bottom_im.png");
   background-position: right;
   background-repeat: no-repeat;
@@ -449,6 +484,7 @@ form {
   font-weight: 400;
   color: #fff;
   margin: 0 10px 0 0;
+  width: 327px;
 }
 
 #input {
@@ -509,6 +545,7 @@ form {
     display: block;
     float: right;
     margin-right: 150px;
+    font-size: 15px;
   }
 
   nav {
@@ -518,14 +555,17 @@ form {
   #back_image {
     background-image: url("./Images/bigger_img.png");
     background-image: cover;
-    max-width: 100%;
+    background-size: 100% 90%;
+    width: 100%;
     margin-top: 56px;
     margin-left: 30px;
+    margin-bottom: -4rem;
+    height: 750px;
   }
 
   .heading {
     font-size: 48px;
-    margin-top: 7rem;
+    margin-top: 14rem;
     font-weight: 700;
     margin-left: 130px;
     color: #172b4d;
@@ -576,6 +616,7 @@ form {
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
+    margin: 2rem;
   }
 
   .project_two img {
@@ -592,12 +633,35 @@ form {
     font-size: 40px;
   }
 
-  .list {
-    font-size: 18px;
-    font-weight: 400;
+  .card-list {
+    margin-block: 1.25rem;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.75rem;
+  }
+
+  .work_skill img {
+    width: 50px;
+  }
+
+  .skill_bar img {
+    width: 48px;
+  }
+
+  .card-list li img {
+    color: #c1c7d0;
     width: 8px;
     height: 8px;
-    margin-bottom: 3px;
+  }
+
+  .card-list-item a {
+    color: #7a869a;
+    white-space: nowrap;
+  }
+
+  .card-list-item1 a {
+    color: #344563;
+    white-space: nowrap;
   }
 
   .title_des {
@@ -614,7 +678,7 @@ form {
   }
 
   .about_one h3 {
-    margin-top: 0.5rem;
+    margin-top: -1.5rem;
     margin-left: 1rem;
     color: rgba(57, 109, 242, 1);
     font-size: 14px;
@@ -639,8 +703,9 @@ form {
 
   .about_intro {
     width: 20rem;
+    height: 102px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 11px;
     margin: 0 20px;
     font-family: 'Poppins', sans-serif;
     color: #344563;
@@ -661,6 +726,7 @@ form {
     height: 100px;
     margin: 2px;
     padding: 10px;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -672,14 +738,6 @@ form {
   .work_skill h3 {
     font-size: 20px;
     font-weight: 500;
-  }
-
-  .skill_bar img {
-    width: 48px;
-  }
-
-  .work_skill img {
-    width: 20px;
   }
 
   #about h3 {
