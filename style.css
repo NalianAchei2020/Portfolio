@@ -653,13 +653,14 @@ form {
   .skill_bars {
     display: flex;
     flex-direction: row;
+    gap: 24px;
   }
 
   .skill_bar {
     width: 84px;
     height: 100px;
     margin: 2px;
-    padding: 3px;
+    padding: 10px;
     flex-direction: column;
   }
 
@@ -669,7 +670,8 @@ form {
   }
 
   .work_skill h3 {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 500;
   }
 
   .skill_bar img {
