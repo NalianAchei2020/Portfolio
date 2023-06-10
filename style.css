@@ -74,6 +74,7 @@ nav {
   border-bottom-left-radius: 100px;
   margin-left: 2rem;
 }
+
 .heading {
   margin-top: 5rem;
   font-size: 40px;
@@ -87,7 +88,6 @@ nav {
 }
 
 .bio {
-  
   width: 327px;
   font-weight: 400;
   color: #172b4d;
@@ -640,7 +640,7 @@ form {
   .about_intro {
     width: 20rem;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 16px;
     margin: 0 20px;
     font-family: 'Poppins', sans-serif;
     color: #344563;
