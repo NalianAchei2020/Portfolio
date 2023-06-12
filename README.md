@@ -51,7 +51,7 @@ This a portfolio project that has a webpage that display my personal skills, rec
 - *Recent and past projects*
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [Live Demo ](https://nalianachei2020.github.io/Portfolio)
+- [Live Demo ](https://nalianachei2020.github.io/Portfolio/)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
