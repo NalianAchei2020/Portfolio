@@ -3,9 +3,9 @@ const closeMenu = document.getElementById("close_menu");
 const navItems = document.querySelector('.nav-items');
 
 openMenu.addEventListener('click', ()=>{
- navItems.style.visibility = "visible"
+ navItems.style.display = "block"
 })
 
 closeMenu.addEventListener('click', ()=>{
-    navItems.style.visibility = "hidden"
+    navItems.style.display = "none"
    })

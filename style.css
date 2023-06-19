@@ -44,7 +44,7 @@ header {
   height: 812px;
   z-index: 99;
   padding-top: 1em;
-  visibility: hidden;
+ display: none;
 }
 
 .nav-items li {
