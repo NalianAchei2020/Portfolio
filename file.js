@@ -1,4 +1,3 @@
-/* eslint-disable no-empty */
 /* eslint-disable no-unused-vars */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
@@ -153,13 +152,11 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
   `;
 }).join('');
 
-// eslint-disable-next-line no-unused-vars
 function show(index) {
   const objElement = document.getElementById(`obj-${index}`);
   objElement.style.visibility = 'visible';
 }
 
-// eslint-disable-next-line no-unused-vars
 function hide(index) {
   const content = document.getElementById(`obj-${index}`);
   content.style.visibility = 'hidden';
