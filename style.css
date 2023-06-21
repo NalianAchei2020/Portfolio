@@ -35,7 +35,54 @@ header {
 }
 
 .nav-items {
+  background: #6070ff;
+  opacity: 0.95;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 812px;
+  z-index: 99;
+  padding-top: 1em;
   display: none;
+}
+
+.nav-items li {
+  padding: 0.7rem;
+}
+
+.card-list-item a {
+  color: #7a869a;
+  white-space: nowrap;
+}
+
+.card-list-item1 a {
+  color: #344563;
+  white-space: nowrap;
+}
+
+.nav-items li a {
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin-left: 2.5rem;
+}
+
+#menu {
+  font-size: 20px;
+  font-weight: 600;
+  width: 16px;
+}
+
+#close_menu {
+  color: #fff;
+  position: relative;
+  right: -85%;
+  top: 3%;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .text-container {
@@ -81,16 +128,6 @@ header {
   flex-direction: row;
   gap: 1rem;
   margin-bottom: 8.265rem;
-}
-
-.card-list-item a {
-  color: #7a869a;
-  white-space: nowrap;
-}
-
-.card-list-item1 a {
-  color: #344563;
-  white-space: nowrap;
 }
 
 .contact-list li a {
@@ -491,10 +528,13 @@ header {
 
   .nav-items {
     display: flex;
+    position: relative;
+    background-color: #fff;
     gap: 2rem;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding-top: 0;
   }
 
   .card-list-item a {
