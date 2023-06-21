@@ -690,7 +690,7 @@ header {
 
   .cart-normal {
     flex-direction: row;
-    width: auto;
+    width: 90%;
   }
 
   .cart-image1,
@@ -699,9 +699,6 @@ header {
     height: 448px;
   }
 
-  .cart-normal {
-    width: 90%;
-  }
 
   .cart-reverse {
     width: 90%;
@@ -932,7 +929,7 @@ header {
     margin-right: -2em;
   }
 
-  .text {
+  .text-popup {
     margin-left: 0;
     width: 60%;
   }

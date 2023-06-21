@@ -127,7 +127,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
   <img  class="popup-image" src="${item.imageTwo}" alt="cart-image">
   </picture>
 <div class="flex-two">
-<div class="text">
+<div class="text-popup">
 <p>${item.description}</p>
 </div>
 <div class="popup-icon">
