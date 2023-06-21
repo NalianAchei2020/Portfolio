@@ -175,5 +175,5 @@ form.addEventListener('click', (e) => {
     e.preventDefault();
     return false;
   }
-  return true;
+  return false;
 });
