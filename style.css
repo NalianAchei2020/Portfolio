@@ -560,6 +560,16 @@ header {
   outline: none;
 }
 
+#error{
+  color:  red;
+  background-color:#fff;
+  font-size: 17px;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  top: 0;
+}
+
 @media screen and (min-width: 768px) {
   * {
     padding: 0;
@@ -934,4 +944,16 @@ header {
   .popup-icon{
     width: 306px;
   }
+
+  #error{
+    color:  red;
+    background-color:#fff;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    top: -10px;
+  }
 }
+
+

@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 /* eslint-disable no-unused-vars */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
@@ -161,3 +162,18 @@ function hide(index) {
   const content = document.getElementById(`obj-${index}`);
   content.style.visibility = 'hidden';
 }
+
+const form = document.querySelector('.contact-container');
+function errorMessage(message) {
+  document.getElementById('error').innerHTML = message;
+}
+const emailValue = document.getElementById('email');
+
+form.addEventListener('click', (e) => {
+  if (emailValue.value !== emailValue.value.toLowerCase()) {
+    errorMessage('Email should be in lower case');
+    e.preventDefault();
+    return false;
+  }
+  return true;
+});
