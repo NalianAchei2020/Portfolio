@@ -186,5 +186,6 @@ form.addEventListener('click', (e) => {
   const JSONData = JSON.stringify(ArrData);
   localStorage.setItem('myData', JSONData);
   localStorage.getItem('myData', JSONData);
+  JSON.parse(JSONData);
   return true;
 });
