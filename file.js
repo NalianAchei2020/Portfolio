@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable no-restricted-syntax */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
 const navItems = document.querySelector('.nav-items');
@@ -174,5 +175,16 @@ form.addEventListener('click', (e) => {
     e.preventDefault();
     return false;
   }
+  const formData = new FormData(form);
+
+  const data = {};
+  for (const [name, value] of formData.entries()) {
+    data[name] = value;
+  }
+  const ArrData = [];
+  ArrData.push(data);
+  const JSONData = JSON.stringify(ArrData);
+  localStorage.setItem('myData', JSONData);
+  localStorage.getItem('myData', JSONData);
   return true;
 });
