@@ -24,7 +24,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 3,
@@ -52,7 +52,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 4,
@@ -66,7 +66,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
 ];
 
@@ -112,6 +112,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
          <button class="btn-project" id="${item.id}" onclick="show(${item.id})">See project</button>
        </div>
 </div> 
+<div class ="container1">
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
 <h2>${item.name}</h2>
 <span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
@@ -145,6 +146,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 <span>${item.source}</span>
 <span>${item.IconSource}</span>
 </button></a>
+</div>
 </div>
 </div>
 </div>
