@@ -931,8 +931,8 @@ header {
   .popup-close {
     font-size: 1rem;
     position: absolute;
-    right: 10%;
-    top: 7%;
+    right: 8%;
+    top: 4%;
     color: rgba(103, 121, 142, 1);
     cursor: pointer;
   }
