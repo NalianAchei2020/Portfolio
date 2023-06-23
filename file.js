@@ -88,6 +88,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
     position = 'content3';
   }
   return `
+ 
   <div class="${className}" key="${item.id}">
   <picture>
       <source media="(min-width:768px)" srcset="${item.Image}" alt="cart-image">
@@ -112,11 +113,11 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
          <button class="btn-project" id="${item.id}" onclick="show(${item.id})">See project</button>
        </div>
 </div> 
-<div class ="container1">
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
-<h2>${item.name}</h2>
+<div class ="container1">
 <span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
-<ul class="card-list" >
+<h2>${item.name}</h2>
+<ul class="card-list pop-list">
 <li class="card-list-item10"><a href="#">CANOPY</a></li>
 <li><img src="Images/Counter.png" alt="counter"/></li>
 <li class="card-list-item20"><a href="#">Back End Dev</a></li>
@@ -132,9 +133,9 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 <p>${item.description}</p>
 </div>
 <div class="popup-icon">
-<ul class="pro-lang">
-  <li>CSS</li>
+<ul class="pro-lang popicons">
   <li>HTML</li>
+  <li>CSS</li>
   <li>Javascript</li>
 </ul>
 <div class = "buttons">
