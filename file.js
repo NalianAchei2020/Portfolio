@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
 const navItems = document.querySelector('.nav-items');
@@ -11,6 +12,7 @@ closeMenu.addEventListener('click', () => {
   navItems.style.display = 'none';
 });
 
+// popup window//
 const data = [
   {
     id: 1,
@@ -24,7 +26,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see source',
+    source: 'see-source',
   },
   {
     id: 2,
@@ -38,7 +40,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see source',
+    source: 'see-source',
   },
   {
     id: 3,
@@ -52,7 +54,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see source',
+    source: 'see-source',
   },
   {
     id: 4,
@@ -66,7 +68,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see source',
+    source: 'see-source',
   },
 ];
 
@@ -88,7 +90,6 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
     position = 'content3';
   }
   return `
- 
   <div class="${className}" key="${item.id}">
   <picture>
       <source media="(min-width:768px)" srcset="${item.Image}" alt="cart-image">
@@ -114,10 +115,10 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
        </div>
 </div> 
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
-<div class ="container1">
-<span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
+<div class="container1">
 <h2>${item.name}</h2>
-<ul class="card-list pop-list">
+<span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
+<ul class="card-list" >
 <li class="card-list-item10"><a href="#">CANOPY</a></li>
 <li><img src="Images/Counter.png" alt="counter"/></li>
 <li class="card-list-item20"><a href="#">Back End Dev</a></li>
@@ -133,9 +134,9 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 <p>${item.description}</p>
 </div>
 <div class="popup-icon">
-<ul class="pro-lang popicons">
-  <li>HTML</li>
+<ul class="pro-lang">
   <li>CSS</li>
+  <li>HTML</li>
   <li>Javascript</li>
 </ul>
 <div class = "buttons">
@@ -154,7 +155,6 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 </div>
   `;
 }).join('');
-
 function show(index) {
   const objElement = document.getElementById(`obj-${index}`);
   objElement.style.visibility = 'visible';
@@ -164,3 +164,26 @@ function hide(index) {
   const content = document.getElementById(`obj-${index}`);
   content.style.visibility = 'hidden';
 }
+
+const Contactform = document.querySelector('.contact-container');
+function errorMessage(message) {
+  document.getElementById('error').innerHTML = message;
+}
+const emailValue = document.getElementById('email');
+Contactform.addEventListener('input', (e) => {
+  if (emailValue.value !== emailValue.value.toLowerCase()) {
+    errorMessage('Email should be in lower case');
+    e.preventDefault();
+    return false;
+  }
+  // preserve data in the browser//
+  const name = Contactform.name.value;
+  const email = Contactform.email.value;
+  const message = Contactform.message.value;
+  const JSONdata = JSON.stringify({ name, email, message });
+  localStorage.setItem('data', JSONdata);
+});
+const userInfo = JSON.parse(localStorage.getItem('data'));
+Contactform.name.value = userInfo.name;
+Contactform.email.value = userInfo.email;
+Contactform.message.value = userInfo.message;
