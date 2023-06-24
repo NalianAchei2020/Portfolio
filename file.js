@@ -175,8 +175,8 @@ form.addEventListener('click', (e) => {
     e.preventDefault();
     return false;
   }
+  // preserve data in the browser//
   const formData = new FormData(form);
-
   const data = {};
   for (const [name, value] of formData.entries()) {
     data[name] = value;
