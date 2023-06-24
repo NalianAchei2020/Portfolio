@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+/* eslint-disable consistent-return */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
 const navItems = document.querySelector('.nav-items');
@@ -11,6 +12,7 @@ closeMenu.addEventListener('click', () => {
   navItems.style.display = 'none';
 });
 
+// popup window//
 const data = [
   {
     id: 1,
@@ -114,7 +116,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
        </div>
 </div> 
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
-<div class ="container1">
+<div class="container1">
 <span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
 <h2>${item.name}</h2>
 <ul class="card-list pop-list">
@@ -154,7 +156,6 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 </div>
   `;
 }).join('');
-
 function show(index) {
   const objElement = document.getElementById(`obj-${index}`);
   objElement.style.visibility = 'visible';
@@ -164,3 +165,28 @@ function hide(index) {
   const content = document.getElementById(`obj-${index}`);
   content.style.visibility = 'hidden';
 }
+
+
+const Contactform = document.querySelector('.contact-container');
+function errorMessage(message) {
+  document.getElementById('error').innerHTML = message;
+}
+const emailValue = document.getElementById('email');
+Contactform.addEventListener('input', (e) => {
+  if (emailValue.value !== emailValue.value.toLowerCase()) {
+    errorMessage('Email should be in lower case');
+    e.preventDefault();
+    return false;
+  }
+  // preserve data in the browser//
+  const name = Contactform.name.value;
+  const email = Contactform.email.value;
+  const message = Contactform.message.value;
+  const JSONdata = JSON.stringify({ name, email, message });
+  localStorage.setItem('data', JSONdata);
+});
+const userInfo = JSON.parse(localStorage.getItem('data'));
+Contactform.name.value = userInfo.name;
+Contactform.email.value = userInfo.email;
+Contactform.message.value = userInfo.message;
+
