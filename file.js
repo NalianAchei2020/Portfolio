@@ -12,7 +12,7 @@ closeMenu.addEventListener('click', () => {
   navItems.style.display = 'none';
 });
 
-//popup window//
+// popup window//
 const data = [
   {
     id: 1,
@@ -115,6 +115,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
        </div>
 </div> 
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
+<div class="container1">
 <h2>${item.name}</h2>
 <span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
 <ul class="card-list" >
@@ -151,6 +152,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 </div>
 </div>
 </div>
+</div>
   `;
 }).join('');
 function show(index) {
@@ -162,7 +164,6 @@ function hide(index) {
   const content = document.getElementById(`obj-${index}`);
   content.style.visibility = 'hidden';
 }
-
 
 const Contactform = document.querySelector('.contact-container');
 function errorMessage(message) {
