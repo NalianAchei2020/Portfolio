@@ -138,9 +138,11 @@ header {
 .cart {
   width: 100%;
   height: auto;
-  margin-top: 114px;
+  margin-top: 80px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -150,11 +152,11 @@ header {
   background: #fff;
   border-radius: 16px;
   border: 1px solid #def1e6;
-  padding: 8px;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin: 2rem;
+  margin-inline: 2rem;
+  margin-top: 5em;
 }
 
 .cart-reverse {
@@ -163,18 +165,18 @@ header {
   background: #fff;
   border-radius: 16px;
   border: 1px solid #def1e6;
-  padding: 16px;
+  padding: 1rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin: 2rem;
+  margin-inline: 2rem;
+  margin-top: 5em;
 }
 
 .cart-image2,
 .cart-image1 {
   height: 220px;
   border-radius: 8px;
-  width: 295px;
+  width: 100%;
 }
 
 .cart-text {
@@ -276,7 +278,7 @@ header {
   border-top-right-radius: 100px;
   min-height: 1062.15px;
   min-width: 100%;
-  margin-top: 5rem;
+  margin-top: 7em;
 }
 
 .about-me h2 {
@@ -495,6 +497,80 @@ header {
   color: white;
 }
 
+[data-popup="popup-window"] {
+  position: fixed;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  -webkit-box-shadow: 10px 8px 119px 200px rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #ebecf094;
+  overflow-y: auto;
+  z-index: 100;
+  visibility: hidden;
+}
+
+.container1 {
+  width: 90%;
+  margin: 5px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.pop-list {
+  margin-block: 0.5em;
+}
+
+.popicons li {
+  margin-block: 1em 0 !important;
+}
+
+.flex-two {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-close {
+  font-size: 1rem;
+  position: absolute;
+  right: 10%;
+  top: 2%;
+  color: rgba(103, 121, 142, 1);
+  cursor: pointer;
+}
+
+.text {
+  margin-left: 0;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.buttons button {
+  margin-top: -5%;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  margin-block: 1rem 2rem;
+  color: #6070ff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+#first {
+  margin-right: 1%;
+}
+
 @media screen and (min-width: 768px) {
   * {
     padding: 0;
@@ -502,7 +578,6 @@ header {
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
-    overflow-x: hidden;
   }
 
   header {
@@ -544,9 +619,22 @@ header {
     white-space: nowrap;
   }
 
+  .card-list-item20 a {
+    color: #7a869a;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
   .card-list-item1 a {
     color: #344563;
     font-size: 18px;
+    font-weight: 500;
+  }
+
+  .card-list-item10 a {
+    color: #344563;
+    font-size: 15px;
     font-weight: 500;
   }
 
@@ -607,7 +695,8 @@ header {
 
   .cart-normal {
     flex-direction: row;
-    width: auto;
+    width: 90%;
+    margin: 5em 2em;
   }
 
   .cart-image1,
@@ -617,20 +706,19 @@ header {
   }
 
   .cart-reverse {
-    width: auto;
+    width: 90%;
     height: auto;
     background: #fff;
     border-radius: 16px;
     border: 1px solid #def1e6;
     padding: 16px;
     display: flex;
-    justify-content: center;
     flex-direction: row-reverse;
-    margin: 2rem;
+    margin: 5em 2rem;
   }
 
   .cart-text {
-    width: 450px;
+    width: auto;
     margin: 10px 10px 10px 30px;
   }
 
@@ -802,5 +890,67 @@ header {
   .cont-btn {
     margin: auto;
     overflow: hidden;
+  }
+
+  [data-popup="popup-window"] {
+    position: fixed;
+    box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+    -webkit-box-shadow: 10px 8px 119px 200px rgba(0, 0, 0, 0.45);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ebecf094;
+    overflow-y: auto;
+    z-index: 100;
+  }
+
+  .container1 {
+    width: 90%;
+    margin: 5px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+  }
+
+  .popup-image {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 1rem;
+    transform: scale(1);
+    transform-origin: center center;
+  }
+
+  .flex-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 104%;
+  }
+
+  .popup-close {
+    font-size: 1rem;
+    position: absolute;
+    right: 8%;
+    top: 4%;
+    color: rgba(103, 121, 142, 1);
+    cursor: pointer;
+  }
+
+  .text-popup {
+    width: 70%;
+  }
+
+  .popup-icon {
+    width: 306px;
+    margin-right: 0;
+  }
+
+  .popicons {
+    margin-left: -2%;
+  }
+
+  #first {
+    margin-right: 1%;
   }
 }
