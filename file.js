@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable consistent-return */
 const openMenu = document.getElementById('menu');
 const closeMenu = document.getElementById('close_menu');
@@ -11,6 +12,7 @@ closeMenu.addEventListener('click', () => {
   navItems.style.display = 'none';
 });
 
+//popup window//
 const data = [
   {
     id: 1,
@@ -151,6 +153,16 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 </div>
   `;
 }).join('');
+function show(index) {
+  const objElement = document.getElementById(`obj-${index}`);
+  objElement.style.visibility = 'visible';
+}
+
+function hide(index) {
+  const content = document.getElementById(`obj-${index}`);
+  content.style.visibility = 'hidden';
+}
+
 
 const Contactform = document.querySelector('.contact-container');
 function errorMessage(message) {
