@@ -157,7 +157,7 @@ function errorMessage(message) {
   document.getElementById('error').innerHTML = message;
 }
 const emailValue = document.getElementById('email');
-Contactform.addEventListener('submit', (e) => {
+Contactform.addEventListener('input', (e) => {
   if (emailValue.value !== emailValue.value.toLowerCase()) {
     errorMessage('Email should be in lower case');
     e.preventDefault();
