@@ -26,7 +26,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 2,
@@ -40,7 +40,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
   {
     id: 4,
@@ -68,7 +68,7 @@ const data = [
     IconSource: '<i class="fa-brands fa-github"></i>',
     IconLive: '<i class="fa-solid fa-arrow-up-right-from-square"></i>',
     live: 'See Live',
-    source: 'see-source',
+    source: 'see source',
   },
 ];
 
@@ -90,6 +90,7 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
     position = 'content3';
   }
   return `
+ 
   <div class="${className}" key="${item.id}">
   <picture>
       <source media="(min-width:768px)" srcset="${item.Image}" alt="cart-image">
@@ -116,9 +117,9 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 </div> 
 <div data-popup="popup-window" class="${position}" id="obj-${item.id}">
 <div class="container1">
-<h2>${item.name}</h2>
 <span class="popup-close"><i class="fa fa-times" aria-hidden="true"  onclick="hide(${item.id})"></i></span>
-<ul class="card-list" >
+<h2>${item.name}</h2>
+<ul class="card-list pop-list">
 <li class="card-list-item10"><a href="#">CANOPY</a></li>
 <li><img src="Images/Counter.png" alt="counter"/></li>
 <li class="card-list-item20"><a href="#">Back End Dev</a></li>
@@ -134,9 +135,9 @@ document.getElementById('project').innerHTML = data.map((item, index) => {
 <p>${item.description}</p>
 </div>
 <div class="popup-icon">
-<ul class="pro-lang">
-  <li>CSS</li>
+<ul class="pro-lang popicons">
   <li>HTML</li>
+  <li>CSS</li>
   <li>Javascript</li>
 </ul>
 <div class = "buttons">
@@ -165,6 +166,7 @@ function hide(index) {
   content.style.visibility = 'hidden';
 }
 
+
 const Contactform = document.querySelector('.contact-container');
 function errorMessage(message) {
   document.getElementById('error').innerHTML = message;
@@ -187,3 +189,4 @@ const userInfo = JSON.parse(localStorage.getItem('data'));
 Contactform.name.value = userInfo.name;
 Contactform.email.value = userInfo.email;
 Contactform.message.value = userInfo.message;
+
